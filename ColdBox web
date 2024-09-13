@@ -1,0 +1,5 @@
+<cfquery name="getUser" datasource="yourDataSource">
+    SELECT *
+    FROM Users
+    WHERE userID = <cfqueryparam value="#userID#" cfsqltype="cf_sql_integer">
+</cfquery>
